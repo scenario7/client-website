@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePage from './pages/HomePage';
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 import ProjectsPage from './pages/ProjectsPage';
-import NavBar from './components/NavBar';
-import CustomFooter from './components/CustomFooter';
+
 import Error404 from './pages/Error404';
 import CustomersPage from './pages/CustomersPage';
 import ContactPage from './pages/ContactPage';
