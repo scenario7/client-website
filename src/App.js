@@ -12,7 +12,7 @@ function App() {
     <div className="App bg-stone-900 overscroll-none">
       <Router>
           <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route exact path='/' element={<HomePage />} />
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/customers' element={<CustomersPage />} />
           <Route path='/contact' element={<ContactPage />} />
