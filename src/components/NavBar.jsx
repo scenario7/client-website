@@ -13,22 +13,22 @@ const NavBar = () => {
         </a>
         <div className='flex justify-center pb-3'>
             <a href="/">
-            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "#/" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
+            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
                 Home
             </button>
             </a>
             <a href="/projects">
-            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "#/projects" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
+            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/projects" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
                 Projects
             </button>
             </a>
             <a href="/customers">
-            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "#/customers" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
+            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/customers" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
                 Customers
             </button>
             </a>
             <a href="/contact">
-            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "#/contact" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
+            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/contact" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
                 Contact
             </button>
             </a>
