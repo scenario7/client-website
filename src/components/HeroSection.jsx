@@ -1,22 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import auditorium from '../images/auditorium.png';
+import classroom from '../images/classroom.png';
+import projector from '../images/projector.png';
 
 const images = [
-  'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXQlMjB0ZWFtfGVufDB8fDB8fHww',
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D',
-  'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGFib3JhdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
+  auditorium,
+  classroom,
+  projector
 ];
 
 const titles = [
-  "Creativity",
-  "Passion",
-  "Innovation"
+  "AV Solutions",
+  "3D Graphic Design",
+  "Business Management"
 ]
 
 const colors = [
-  '#dfebeb',
-  '#ffcbcb',
-  '#f1f7b5'
+  '#ffff00',
+  '#800080',
+  '#ff0000'
+]
+
+const textColors = [
+  '#fbec5d',
+  '#e4a0f7',
+  '#fa8072'
 ]
 
 const HeroSection = () => {
@@ -65,8 +74,8 @@ const HeroSection = () => {
           repeat={Infinity}
         />
         */}
-        <h1 className='font-serif lg:text-8xl md:text-8xl text-6xl drop-shadow-sm italic pb-3 opacity-90' style={{transition: '0.5s ease-in-out', color: colors[currentImage]}}>{titles[currentImage]}.</h1>
-        <h1 className='font-sans lg:text-xl md:text-xl text-md text-white'>Driving customer satisfaction through passion.</h1>
+        <h1 className='font-sans lg:text-8xl md:text-8xl text-6xl drop-shadow-sm font-bold pb-3 opacity-90' style={{transition: '0.5s ease-in-out', color: textColors[currentImage]}}>{titles[currentImage]}.</h1>
+        <h1 className='font-sans lg:text-xl md:text-xl text-md text-white'>The technology for the next generation.</h1>
       </div>
 
       <div className="relative bottom-4 flex justify-between  items-center w-full px-10 opacity-0 lg:opacity-100 md:opacity-100">

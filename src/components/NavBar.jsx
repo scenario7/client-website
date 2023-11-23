@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className='bg-stone-900 px-2 py-3 flex flex-col items-center'>
         <a href="/">
-            <h1 className='font-etb text-white tracking-tighter text-3xl py-5'>Company Name Here.</h1>
+            <h1 className='font-serif text-white text-3xl py-5'>LTI IT Solutions</h1>
             {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/967px-Emirates_logo.svg.png" alt="" className='object-contain h-32 py-5'/> */}
         </a>
         <div className='flex justify-center pb-3'>
@@ -17,9 +17,9 @@ const NavBar = () => {
                 Home
             </button>
             </a>
-            <a href="/projects">
-            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/projects" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
-                Projects
+            <a href="/solutions">
+            <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/solutions" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 hover:font-semibold py-3`} href="/projects">
+                Solutions
             </button>
             </a>
             <a href="/customers">

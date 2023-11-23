@@ -5,7 +5,7 @@ const CustomFooter = () => {
     <div className="flex flex-col">
     <div className='bg-blue-600 flex px-5 py-10 justify-between items-center'>
         <div className='flex flex-col justify-start items-start'>
-            <h1 className='font-etb tracking-tighter text-left lg:text-3xl md:text-3xl text-xl text-white'>Company Name Here</h1>
+            <h1 className='font-serif text-left lg:text-3xl md:text-3xl text-xl text-white'>LTI IT Solutions</h1>
             <h1 className='font-sans lg:text-lg md:text-lg text-md text-white'>Bengaluru, KA</h1>
         </div>
         <div>

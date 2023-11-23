@@ -6,11 +6,12 @@ const WhatWeDo = () => {
         <div className='flex flex-col items-center justify-center space-y-10 pt-10 pb-10'>
         <div className='bg-stone-950 flex flex-col lg:flex-row md:flex-row px-3 lg:px-5  py-3 pt-3 pb-3 justify-center items-center'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 lg:w-12 lg:h-12 text-white">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
             </svg>
+
         <div className='flex flex-col items-center lg:items-start md:items-start md:justify-start lg:justify-start w-80 md:pl-3 lg:pl-3 '>
-            <h1 className='font-sans text-md text-white text-left font-bold'>Digital Marketing</h1>
-            <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>We drive growth through strategic digital marketing campaigns. With expertise in SEO, social media, and online advertising, we ensure your brand gets noticed and your message resonates.</p>
+            <h1 className='font-sans text-md text-white text-left font-bold'>AV & Security Solutions</h1>
+            <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>Enhance safety and communication with cutting-edge AV and security solutions tailored for businesses. Elevate your technology infrastructure for seamless operations and peace of mind.</p>
         </div>
 </div>
 
@@ -20,8 +21,8 @@ const WhatWeDo = () => {
         </svg>
 
     <div className='flex flex-col items-center lg:items-start md:items-start md:justify-start lg:justify-start w-80 md:pl-3 lg:pl-3 '>
-        <h1 className='font-sans text-md text-white text-left font-bold'>Web Development</h1>
-        <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>Crafting interactive and responsive web solutions tailored to your needs. From front-end development to back-end infrastructure, we deliver seamless digital experiences.</p>
+        <h1 className='font-sans text-md text-white text-left font-bold'>3D Graphic Design</h1>
+        <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>Transform your building management system (BMS) with immersive 3D graphic design. Visualize and optimize facility performance for enhanced efficiency and a futuristic user experience.</p>
     </div>
 </div>
 
@@ -31,8 +32,8 @@ const WhatWeDo = () => {
         </svg>
 
     <div className='flex flex-col items-center lg:items-start md:items-start md:justify-start lg:justify-start w-80 md:pl-3 lg:pl-3 '>
-        <h1 className='font-sans text-md text-white text-left font-bold'>Graphic Design</h1>
-        <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>Elevate your brand with captivating visuals. Our graphic design team creates stunning imagery and branding materials that leave a lasting impression on your audience.</p>
+        <h1 className='font-sans text-md text-white text-left font-bold'>Hospitality Solutions</h1>
+        <p className='font-sans text-xs lg:text-sm text-gray-400 text-center md:text-left lg:text-left'>Powering the future of data management and hospitality services. From robust data centers to seamless guest experiences, we redefine excellence in technology for unparalleled business success.</p>
     </div>
 </div>
 
@@ -41,10 +42,10 @@ const WhatWeDo = () => {
         <div className='flex flex-col lg:w-1/4 space-y-5 lg:space-y-10 items-center'>
             <h1 className='tracking-widest text-white text-8xl'>...</h1>
             <h1 className='text-white text-4xl font-serif'>What We Do</h1>
-            <h1 className='text-white text-md font-sans'>Transforming Ideas into Engaging Media Experiences, Enhancing Your Brand's Digital Footprint</h1>
-            <a href="/projects">
+            <h1 className='text-white text-md font-sans'>Redefine success with our transformative IT solutions and amplify your impact.</h1>
+            <a href="/solutions">
                 <button className='bg-blue-600 w-40 hover:bg-white  text-white hover:text-blue-600 transition'>
-                    <h1 className='font-serif text-xl py-3'>Projects</h1>
+                    <h1 className='font-serif text-xl py-3'>Solutions</h1>
                 </button>
             </a>
         </div>

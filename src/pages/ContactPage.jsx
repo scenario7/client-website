@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import NavBar from '../components/NavBar';
 import CustomFooter from '../components/CustomFooter';
+import * as animationData from '../lottie/Animation - 1700739710573';
+import Lottie from 'lottie-web';
 
 const ContactPage = () => {
+
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +34,6 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    alert("Your response has been recorded")
     setSubmitted(true);
   };
 
@@ -42,7 +53,7 @@ const ContactPage = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className='bg-gray-300 p-2 rounded mb-2 md:mb-4'
+                    className='bg-stone-700 text-white p-2 rounded mb-2 md:mb-4'
                     required
                   />
                 </div>
@@ -54,7 +65,7 @@ const ContactPage = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className='bg-gray-300 p-2 rounded mb-2 md:mb-4'
+                    className='bg-stone-700 text-white p-2 rounded mb-2 md:mb-4'
                     required
                   />
                 </div>
@@ -66,7 +77,7 @@ const ContactPage = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className='bg-gray-300 w-full p-2 rounded mb-2 md:mb-4'
+                  className='bg-stone-700 text-white w-full p-2 rounded mb-2 md:mb-4'
                   required
                 />
               </div>
@@ -79,7 +90,9 @@ const ContactPage = () => {
               </button>
             </form>
           ) : (
-            <h1 className='text-xl font-sans text-white'>Submitted!</h1>
+            <div>
+              <h1 className='text-xl font-sans text-white'>Submitted!</h1>
+            </div>
           )
         }
       </div>
