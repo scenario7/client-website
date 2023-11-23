@@ -34,7 +34,7 @@ const HeroSection = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3500); // Increased auto-transition time to 3.5 seconds
+    }, 4000); // Increased auto-transition time to 3.5 seconds
 
     return () => clearInterval(intervalId);
   }, []);
@@ -55,26 +55,26 @@ const HeroSection = () => {
         style={{
           backgroundImage: `url('${images[currentImage]}')`,
           backgroundSize: 'cover',
+          backgroundPosition : 'center',
           mixBlendMode: 'multiply',
-          transition: 'background-image 0.5s ease-in-out', // Smooth transition
+          transition: 'color 0.5s ease-in-out', // Smooth transition
         }}
       ></div>
-      <div className='relative z-10 space-y-5'>
-        {/*
+      <div className='relative z-10 space-y-5'
+      style={{transition: '0.5s ease-in-out', color: textColors[currentImage]}}
+      >
         <TypeAnimation
           sequence={[
-            'Creativity.',
+            'AV Solutions.',
             1500,
-            'Innovation.',
+            '3D Graphic Design.',
             1500,
-            'Passion.',
+            'Business Management.',
             1500,
           ]}
-          className='font-serif text-8xl text-white italic pb-3'
+          className='font-sans lg:text-8xl md:text-8xl text-4xl drop-shadow-sm font-bold pb-3 opacity-90'
           repeat={Infinity}
         />
-        */}
-        <h1 className='font-sans lg:text-8xl md:text-8xl text-6xl drop-shadow-sm font-bold pb-3 opacity-90' style={{transition: '0.5s ease-in-out', color: textColors[currentImage]}}>{titles[currentImage]}.</h1>
         <h1 className='font-sans lg:text-xl md:text-xl text-md text-white'>The technology for the next generation.</h1>
       </div>
 
