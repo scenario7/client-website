@@ -11,7 +11,6 @@ const HomePage = () => {
       <NavBar/>
       <HeroSection></HeroSection>
       <WhatWeDo/>
-      <Testimonials/>
       <CustomFooter/>
     </div>
   )

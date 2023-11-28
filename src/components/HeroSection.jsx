@@ -6,25 +6,25 @@ import projector from '../images/projector.png';
 
 const images = [
   auditorium,
-  classroom,
-  projector
+  'https://www.livehome3d.com/assets/img/win/video-poster@2x.jpg',
+  'https://media.istockphoto.com/id/503756999/photo/madinat-jumeirah-in-dubai.jpg?s=612x612&w=0&k=20&c=npZRIjT4HAgCs4GksD7jWhy9yFxk-3X8_XLy06UJbnY='
 ];
 
 const titles = [
-  "AV Solutions",
+  "AV & Security Solutions",
   "3D Graphic Design",
-  "Business Management"
+  "Data Centers, Hospitality and Infrastructures"
 ]
 
 const colors = [
   '#ffff00',
-  '#800080',
+  '#0000FF',
   '#ff0000'
 ]
 
 const textColors = [
   '#fbec5d',
-  '#e4a0f7',
+  '#1aa7ec',
   '#fa8072'
 ]
 
@@ -48,7 +48,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className='relative lg:h-[32rem] md:h-[32rem] h-96 flex justify-center items-center flex-col'>
+    <div className='relative lg:h-[32rem] md:h-[32rem] h-80 flex justify-center items-center flex-col'>
           <div className='absolute bg-blue-600 top-0 left-0 right-0 bottom-0' style={{ opacity: 0.4 , backgroundColor : colors[currentImage]}}></div>
       <div
         className='bg-no-repeat absolute top-0 left-0 right-0 bottom-0'
@@ -57,13 +57,13 @@ const HeroSection = () => {
           backgroundSize: 'cover',
           backgroundPosition : 'center',
           mixBlendMode: 'multiply',
-          transition: 'color 0.5s ease-in-out', // Smooth transition
+          transition: '', // Smooth transition
         }}
       ></div>
       <div className='relative z-10 space-y-5'
-      style={{transition: '0.5s ease-in-out', color: textColors[currentImage]}}
+      style={{transition: '', color: textColors[currentImage]}}
       >
-        <TypeAnimation
+        {/* <TypeAnimation
           sequence={[
             'AV Solutions.',
             1500,
@@ -74,8 +74,8 @@ const HeroSection = () => {
           ]}
           className='font-sans lg:text-8xl md:text-8xl text-4xl drop-shadow-sm font-bold pb-3 opacity-90'
           repeat={Infinity}
-        />
-        <h1 className='font-sans lg:text-xl md:text-xl text-md text-white'>The technology for the next generation.</h1>
+        /> */}
+        <h1 className='font-sans lg:text-8xl md:text-8xl md:font-bold lg:font-bold text-3xl sm:px-8 drop-shadow-sm font-black pb-2 opacity-90' style={{transition: '', color: '#ffffff'}}>{titles[currentImage]}</h1>
       </div>
 
       <div className="relative bottom-4 flex justify-between  items-center w-full px-10 opacity-0 lg:opacity-100 md:opacity-100">

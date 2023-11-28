@@ -23,6 +23,7 @@ const CustomersPage = () => {
                 },
                 alt
               },
+              body
             } | order(title)`
           )
           .then((data) => setCustomers(data))
@@ -33,14 +34,14 @@ const CustomersPage = () => {
     <div className='min-h-screen flex flex-col justify-between'>
         <div>
         <NavBar/>
-            <h1 className='font-serif text-white text-4xl lg:text-6xl py-10  '>Our Customers</h1>
-            <div className={`${customers.length == 0 ? "flex flex-col items-center" : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"} px-8 py-8 gap-5`}>
+            <h1 className='font-serif text-white text-4xl lg:text-6xl py-10  '>Verticals</h1>
+            <div className={`${customers.length == 0 ? "flex flex-col items-center" : "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3"} px-8 py-8 gap-5`}>
 
             {customers.length === 0 ? (
                 <RotateLoader color='#ffffff' loading={true} speedMultiplier={1}/>
             ) : (
                 customers.map((customer) => (
-                    <CustomerCard image={customer.mainImage.asset.url} name={customer.title} key={customer._id}/>
+                    <CustomerCard image={customer.mainImage.asset.url} name={customer.title} key={customer._id} body={customer.body}/>
                 ))
             )}
             </div>
