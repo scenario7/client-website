@@ -13,7 +13,7 @@ const images = [
 const titles = [
   "AV & Security Solutions",
   "3D Graphic Design",
-  "Data Centers, Hospitality and Infrastructures"
+  "Data Centers, Hospitality and Infrastructure Solutions"
 ]
 
 const colors = [
@@ -75,7 +75,7 @@ const HeroSection = () => {
           className='font-sans lg:text-8xl md:text-8xl text-4xl drop-shadow-sm font-bold pb-3 opacity-90'
           repeat={Infinity}
         /> */}
-        <h1 className='font-sans lg:text-8xl md:text-8xl md:font-bold lg:font-bold text-3xl sm:px-8 drop-shadow-sm font-black pb-2 opacity-90' style={{transition: '', color: '#ffffff'}}>{titles[currentImage]}</h1>
+        <h1 className='font-sans lg:text-8xl md:text-8xl md:font-bold lg:font-bold text-3xl px-5 drop-shadow-sm font-regular pb-2 opacity-90' style={{transition: '', color: '#ffffff'}}>{titles[currentImage]}</h1>
       </div>
 
       <div className="relative bottom-4 flex justify-between  items-center w-full px-10 opacity-0 lg:opacity-100 md:opacity-100">
