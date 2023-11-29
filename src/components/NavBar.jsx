@@ -6,10 +6,10 @@ const NavBar = () => {
     const location = useLocation()
 
   return (
-    <div className='bg-stone-900 px-8 py-3 flex flex-col items-center'>
+    <div className='bg-stone-900 px-6 py-3 flex flex-col items-center'>
         <div className="flex items-center justify-between w-full">
         <a href="/">
-            <h1 className='font-serif text-white text-3xl py-5 text-left'>LT IT Solutions</h1>
+            <h1 className='font-serif text-white text-2xl py-5 text-left'>LT IT Solutions</h1>
         </a>
         <div className='flex flex-col items-end'>
           <a href='tel:+971508263954'>
