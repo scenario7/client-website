@@ -20,7 +20,7 @@ const NavBar = () => {
           </a>
         </div>
         </div>
-        <div className='flex items-start w-full justify-start pb-3'>
+        <div className='flex items-center justify-center md:items-start lg:items-start w-full md:justify-start lg:justify-start pb-3 space-x-2'>
             <a href="/">
             <button className={`font-sans text-gray-400 hover:text-white ${location.pathname === "/" ? 'text-white bg-stone-800' : 'text-gray-400 bg-transparent'} px-3 py-2 rounded-full`} href="/projects">
                 Home

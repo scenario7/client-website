@@ -41,10 +41,10 @@ const ContactPage = () => {
     <div className='min-h-screen bg-stone-900 flex flex-col justify-between'>
       <NavBar />
       <div className="flex flex-col items-center">
-        <h1 className='font-serif text-white text-4xl lg:text-6xl pb-5 md:pb-10'>Contact Us</h1>
         {
           submitted === false ? (
             <form onSubmit={handleSubmit} className="flex flex-col items-center min-w-full py-5 px-5 md:py-10 md:px-10">
+              <h1 className='font-serif text-white text-4xl lg:text-6xl pb-5 md:pb-10'>Contact Us</h1>
               <div className="flex flex-col space-y-3 md:space-y-6">
                 <div className="flex flex-col items-start">
                   <label className='text-white text-md md:text-lg lg:text-xl py-2'>Name:</label>
@@ -91,7 +91,8 @@ const ContactPage = () => {
             </form>
           ) : (
             <div>
-              <h1 className='text-xl font-sans text-white'>Submitted!</h1>
+              <h1 className='font-serif text-white text-4xl lg:text-6xl pb-5 md:pb-10'>Thank you</h1>
+              <h1 className='text-xl font-sans text-white'>Your query has been submitted!</h1>
             </div>
           )
         }
