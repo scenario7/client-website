@@ -8,6 +8,7 @@ module.exports = {
       'serif': ["DM Serif Text", "serif"],
       'sans': ["DM Sans", "sans"],
       'etb': ["Edu TAS Beginner", "sans"],
+      'lexend': ['Lexend', 'sans']
     },
   },
   plugins: [],

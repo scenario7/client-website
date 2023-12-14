@@ -4,6 +4,7 @@ import CustomFooter from '../components/CustomFooter';
 import * as animationData from '../lottie/Animation - 1700739710573';
 import Lottie from 'lottie-web';
 import DocumentMeta from 'react-document-meta';
+import { Helmet } from 'react-helmet';
 
 const ContactPage = () => {
 
@@ -53,6 +54,12 @@ const ContactPage = () => {
     <div className='min-h-screen bg-stone-900 flex flex-col justify-between'>
       <NavBar />
       <DocumentMeta {...meta}/>
+      <Helmet>
+        <meta charSet='utf-8'/>
+        <title>T IT Solutions Contact</title>
+        <desc>Connect with us to arrange a callback to assist you</desc>
+        
+      </Helmet>
       <div className="flex flex-col items-center">
         {
           submitted === false ? (

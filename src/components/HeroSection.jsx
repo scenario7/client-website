@@ -5,9 +5,9 @@ import classroom from '../images/classroom.png';
 import projector from '../images/projector.png';
 
 const images = [
-  auditorium,
-  'https://www.livehome3d.com/assets/img/win/video-poster@2x.jpg',
-  'https://media.istockphoto.com/id/503756999/photo/madinat-jumeirah-in-dubai.jpg?s=612x612&w=0&k=20&c=npZRIjT4HAgCs4GksD7jWhy9yFxk-3X8_XLy06UJbnY='
+  'https://schmidt-arch.com/wp-content/uploads/2016/06/lakecentralhs13.jpg',
+  'https://image.slidesdocs.com/responsive-images/background/a-blue-3d-graphic-design-of-buildings-powerpoint-background_4ccf0d2032__960_540.jpg',
+  'https://www.kayak.co.in/rimg/dimg/dynamic/376-1662541525-burj-al-arab-scaled.jpeg?height=440&width=744&crop=true'
 ];
 
 const titles = [
@@ -75,7 +75,7 @@ const HeroSection = () => {
           className='font-sans lg:text-8xl md:text-8xl text-4xl drop-shadow-sm font-bold pb-3 opacity-90'
           repeat={Infinity}
         /> */}
-        <h1 className='font-sans lg:text-8xl md:text-8xl md:font-bold lg:font-bold text-3xl px-5 drop-shadow-sm font-regular pb-2 opacity-90' style={{transition: '', color: '#ffffff'}}>{titles[currentImage]}</h1>
+        <h1 className='font-lexend lg:text-7xl md:text-7xl md:font-bold lg:font-bold text-4xl px-5 drop-shadow-sm font-regular pb-2 opacity-90' style={{transition: '', color: '#ffffff'}}>{titles[currentImage]}</h1>
       </div>
 
       <div className="relative bottom-4 flex justify-between  items-center w-full px-10 opacity-0 lg:opacity-100 md:opacity-100">
