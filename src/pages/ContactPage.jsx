@@ -3,8 +3,20 @@ import NavBar from '../components/NavBar';
 import CustomFooter from '../components/CustomFooter';
 import * as animationData from '../lottie/Animation - 1700739710573';
 import Lottie from 'lottie-web';
+import DocumentMeta from 'react-document-meta';
 
 const ContactPage = () => {
+
+  const meta = {
+    title : 'LT IT Solutions Contact',
+    description : "Connect with us to arrange a callback to assist you",
+    meta : {
+        charset : 'utf-8',
+        name : {
+            keywords : 'it solutions, lt it, av solutions, hospitality management, 3d graphic design'
+        }
+    }
+}
 
     const defaultOptions = {
       loop: true,
@@ -40,6 +52,7 @@ const ContactPage = () => {
   return (
     <div className='min-h-screen bg-stone-900 flex flex-col justify-between'>
       <NavBar />
+      <DocumentMeta {...meta}/>
       <div className="flex flex-col items-center">
         {
           submitted === false ? (
