@@ -10,7 +10,7 @@ const ProjectCard = ({ image, title, publishedAt, body }) => {
           <h1 className='font-sans text-2xl pb-4 text-white font-semibold'>{title}</h1>
           <h1 className='font-sans text-lg text-gray-500 font-semibold'>{publishedAt}</h1>
         </div>
-        <h1 className='font-sans text-lg lg:text-left text-gray-300'>{body}</h1>
+        <h1 className='text-gray-400 font-sans'>{body}</h1>
       </div>
     </div>
   );
