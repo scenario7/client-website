@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import auditorium from '../images/auditorium.png';
-import classroom from '../images/classroom.png';
-import projector from '../images/projector.png';
+import hospitality from '../images/hospitality.jpeg';
+import auditorium from '../images/auditorium.jpg';
+import graphic from '../images/3dgraphic.jpg';
 
-const images = [
+const imagesURL = [
   'https://schmidt-arch.com/wp-content/uploads/2016/06/lakecentralhs13.jpg',
   'https://image.slidesdocs.com/responsive-images/background/a-blue-3d-graphic-design-of-buildings-powerpoint-background_4ccf0d2032__960_540.jpg',
   'https://www.kayak.co.in/rimg/dimg/dynamic/376-1662541525-burj-al-arab-scaled.jpeg?height=440&width=744&crop=true'
 ];
+
+const images = [
+  auditorium,
+  graphic,
+  hospitality
+]
 
 const titles = [
   "AV & Security Solutions",
@@ -17,9 +23,9 @@ const titles = [
 ]
 
 const colors = [
-  '#ffff00',
-  '#0000FF',
-  '#ff0000'
+  '#ffffed',
+  '#add8e6',
+  '#ff7f7f'
 ]
 
 const textColors = [
@@ -49,7 +55,7 @@ const HeroSection = () => {
 
   return (
     <div className='relative lg:h-[32rem] md:h-[32rem] h-80 flex justify-center items-center flex-col'>
-          <div className='absolute bg-blue-600 top-0 left-0 right-0 bottom-0' style={{ opacity: 0.4 , backgroundColor : colors[currentImage]}}></div>
+          <div className='absolute bg-blue-600 top-0 left-0 right-0 bottom-0' style={{ opacity: 0.3 , backgroundColor : colors[currentImage]}}></div>
       <div
         className='bg-no-repeat absolute top-0 left-0 right-0 bottom-0'
         style={{
