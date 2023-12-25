@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import hospitality from '../images/hospitality.jpeg';
+import hospitality from '../images/hospitality.jpg';
 import auditorium from '../images/auditorium.jpg';
 import graphic from '../images/3dgraphic.jpg';
 
