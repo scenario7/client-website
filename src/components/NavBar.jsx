@@ -1,11 +1,18 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import companyLogo from '../images/companyLogo.png';
 
 const NavBar = () => {
 
     const location = useLocation()
 
   return (
+    <div className=''>
+      <div className='bg-white w-screen px-5 py-1 outline outline-blue-600 outline-4 flex items-center justify-center sticky top-0'>
+
+        <img src={companyLogo} alt="" className='h-10'/>
+
+      </div>
     <div className='bg-stone-900 px-6 py-3 flex flex-col items-center'>
         <div className="flex items-center justify-between w-full">
         <a href="/">
@@ -42,6 +49,7 @@ const NavBar = () => {
             </button>
             </a>
         </div>
+    </div>
     </div>
   )
 }
