@@ -1,7 +1,5 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import companylogo from '../images/companylogo.png';
-
 const NavBar = () => {
 
     const location = useLocation()
