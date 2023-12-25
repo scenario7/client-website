@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className=''>
       <div className='bg-white w-screen px-5 py-1 outline outline-blue-600 outline-4 flex items-center justify-center sticky top-0'>
 
-        <img src={companylogo} alt="" className='h-10'/>
+        <img src='https://media.licdn.com/dms/image/D4D0BAQF-7Mw7Wo9ycQ/company-logo_200_200/0/1683399756507?e=1711584000&v=beta&t=7IM4NVOX5I1azL2d24lNC6cp6ysSefboQA4XQSHuxqU' alt="" className='h-10'/>
 
       </div>
     <div className='bg-stone-900 px-6 py-3 flex flex-col items-center'>
