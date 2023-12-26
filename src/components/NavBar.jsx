@@ -1,14 +1,15 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import companylogo2 from '../images/companylogo2.jpg'
 const NavBar = () => {
 
     const location = useLocation()
 
   return (
     <div className=''>
-      <div className='bg-white w-screen px-5 py-1 outline outline-blue-600 outline-4 flex items-center justify-center sticky top-0'>
+      <div className='bg-white w-screen px-5 py-2 outline outline-blue-600 outline-4 flex items-center justify-center sticky top-0'>
 
-        <img src='https://media.licdn.com/dms/image/D4D0BAQF-7Mw7Wo9ycQ/company-logo_200_200/0/1683399756507?e=1711584000&v=beta&t=7IM4NVOX5I1azL2d24lNC6cp6ysSefboQA4XQSHuxqU' alt="" className='h-10'/>
+        <img src={companylogo2} alt="" className='h-12'/>
 
       </div>
     <div className='bg-stone-900 px-6 py-3 flex flex-col items-center'>
