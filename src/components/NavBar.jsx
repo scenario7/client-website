@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import companylogo2 from '../images/companylogo2.jpg'
 const NavBar = () => {
 
     const location = useLocation()
@@ -8,7 +7,7 @@ const NavBar = () => {
   return (
     <div className=''>
       <div className='bg-white w-screen px-5 py-2 outline outline-blue-600 outline-4 flex items-center justify-center sticky top-0'>
-        <img src='../images/companylogo2.jpg' alt="" className='h-12'/>
+        <img src='/images/companylogo2.jpg' alt="" className='h-12'/>
       </div>
     <div className='bg-stone-900 px-6 py-3 flex flex-col items-center'>
         <div className="flex items-center justify-between w-full">
